@@ -77,6 +77,20 @@ body {
   text-align: center;
   padding: 10px; /* Reduced padding to bring the content closer */
   background-color: #74c365;
+  background-image: url("asset/grass.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.menu-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0); /* Adjust transparency: 0.5 for 50% */
+  z-index: 1; /* Ensure the overlay stays behind the content */
 }
 
 .menu-section h2 {
