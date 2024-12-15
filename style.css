@@ -1,0 +1,376 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playwrite+TZ+Guides&family=Poppins:wght@300;400;500;600&display=swap");
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+}
+
+.header {
+  background-image: url("asset/Ash_Bulbasaur.webp");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust transparency: 0.5 for 50% */
+  z-index: 1; /* Ensure the overlay stays behind the content */
+}
+
+/* Text styling to ensure visibility */
+.header-content {
+  position: relative; /* Place text content above the overlay */
+  z-index: 2; /* Ensure text appears above the overlay */
+}
+
+.header h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+.header p {
+  font-size: 1em;
+  margin: 5px 0;
+  font-family: "Dancing Script", cursive;
+}
+
+.house-rules {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #ddd;
+  margin: 20px auto;
+  width: 80%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.house-rules h2 {
+  margin: 0;
+  font-size: 1.8em;
+  color: #333;
+}
+
+.house-rules ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.house-rules ul li {
+  font-size: 1em;
+  margin: 5px 0;
+}
+
+/* Menu Section Styling */
+.menu-section {
+  text-align: center;
+  padding: 10px; /* Reduced padding to bring the content closer */
+  background-color: #74c365;
+}
+
+.menu-section h2 {
+  font-size: 1.2em;
+  margin-bottom: 10px; /* Reduced margin to minimize the space between the title and content */
+  text-align: left;
+  color: white;
+}
+
+.menu-grid {
+  display: flex; /* Arrange items in a row */
+  flex-wrap: nowrap; /* Prevent wrapping to the next line */
+  justify-content: space-between; /* Add space between items */
+  overflow-x: auto; /* Enable horizontal scrolling for smaller screens */
+  gap: 15px; /* Add space between items */
+  padding: 10px;
+}
+
+.menu-item {
+  position: relative;
+  flex: 0 0 auto; /* Prevent items from shrinking or growing */
+  width: 200px; /* Fixed width for each item */
+  aspect-ratio: 1; /* Maintain square dimensions */
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.menu-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.7);
+  transition: filter 0.3s ease;
+}
+
+.menu-item:hover img {
+  filter: brightness(1);
+}
+
+.menu-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.menu-item h3,
+.menu-item p {
+  position: absolute;
+  z-index: 2;
+  color: white;
+  text-align: center;
+  padding: 0 10px;
+  width: 100%;
+}
+
+.menu-item h3 {
+  top: 40%;
+  transform: translateY(-50%);
+  font-size: 1.2em;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.menu-item p {
+  bottom: 10%;
+  font-size: 1em;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+/* Menu Section 2 Styling */
+.menu-section2 {
+  text-align: center;
+  padding: 10px; /* Reduced padding to bring the content closer */
+}
+
+.menu-section2 h2 {
+  font-size: 1.2em;
+  margin-bottom: 10px; /* Reduced margin to minimize the space between the title and content */
+  text-align: left;
+}
+
+.menu-grid2 {
+  display: flex; /* Arrange items in a row */
+  flex-wrap: nowrap; /* Prevent wrapping to the next line */
+  justify-content: space-between; /* Add space between items */
+  overflow-x: auto; /* Enable horizontal scrolling for smaller screens */
+  gap: 15px; /* Add space between items */
+  padding: 10px;
+}
+
+.menu-item2 {
+  position: relative;
+  flex: 0 0 auto; /* Prevent items from shrinking or growing */
+  width: 200px; /* Fixed width for each item */
+  aspect-ratio: 1; /* Maintain square dimensions */
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.menu-item2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.7);
+  transition: filter 0.3s ease;
+}
+
+.menu-item2:hover img {
+  filter: brightness(1);
+}
+
+.menu-item2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.menu-item2 h3,
+.menu-item2 p {
+  position: absolute;
+  z-index: 2;
+  color: white;
+  text-align: center;
+  padding: 0 10px;
+  width: 100%;
+}
+
+.menu-item2 h3 {
+  top: 40%;
+  transform: translateY(-50%);
+  font-size: 1.2em;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.menu-item2 p {
+  bottom: 10%;
+  font-size: 1em;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+/* Light Bites Section Styles */
+.light-bites-section {
+  padding: 10px;
+  background-color: #74c365;
+}
+
+.light-bites-section h2 {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+  color: white;
+}
+
+/* Croffle Series Section Styles */
+.croffle-series-section {
+  padding: 10px;
+}
+
+.croffle-series-section h2 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+/* Beverages section styling */
+.beverages-section {
+  background-color: #74c365;
+  padding: 20px;
+  text-align: center;
+}
+
+.beverages-section h2 {
+  color: white;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.beverages-category {
+  color: white;
+  text-align: left;
+}
+
+.beverages-category h3 {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.beverages-category ul {
+  list-style-type: none;
+  font-family: "Dancing Script", cursive;
+  text-align: center;
+  padding: 0;
+}
+
+.beverages-category li {
+  line-height: 1.3;
+  padding-right: 1px;
+}
+
+.beverages-category2 {
+  margin-top: 20px;
+}
+
+/* Section Container */
+.section {
+  display: flex;
+  align-items: stretch; /* Stretch the items to have equal height */
+  justify-content: flex-start; /* Ensures items align left-to-right */
+  background-color: transparent; /* Makes the background transparent */
+  border-radius: 15px;
+  box-shadow: none; /* Remove box shadow */
+  max-width: 400px; /* iPhone-friendly width */
+  gap: 0px; /* Space between image and text */
+  background: rgba(255, 255, 255, 0.8); /* Adds a light opacity for blending */
+}
+
+/* Lunch Set Section Styling */
+.lunch-set .text-box {
+  background-color: #ffffff; /* Green background for Lunch Set */
+  color: rgb(0, 0, 0); /* Black text for Lunch Set */
+}
+
+.lunch-set .text-box h2 {
+  color: #000000; /* Black text for the title */
+}
+
+/* Contact Info Section Styling */
+.contact-info .text-box {
+  background-color: #74c365; /* Light green background for Contact Info */
+  color: #ffffff; /* White text for Contact Info */
+}
+
+.contact-info .text-box h2 {
+  color: #000000; /* Red text for the title */
+}
+
+/* Left Box: Image Styling */
+.image-box {
+  flex: 0 0 100px; /* Fixed width for the image box */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-box img {
+  width: 200px;
+  height: 390px; /* Match the height of the image */
+  object-fit: cover;
+}
+
+/* Right Box: Text Styling */
+.text-box {
+  flex-grow: 1; /* Allow text box to grow and fill available space */
+  padding: 0px; /* Ensure padding for text to fill the background */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically align text */
+  text-align: center; /* Center-align text */
+  height: 390px; /* Match the height of the image */
+}
+
+.text-box h2 {
+  font-size: 1.4em;
+  font-weight: 600;
+  margin-bottom: 10px;
+  white-space: nowrap;
+  text-align: center;
+  height: 55px;
+}
+
+.text-box p {
+  font-size: 1.1em;
+  margin: 5px 0;
+  text-align: center;
+}
+
+.text-box .price {
+  color: #ff0000;
+  font-weight: bold;
+}
